@@ -1,5 +1,3 @@
-package com.example.modernfoodrecipesapp
-
 import android.app.Application
 import android.content.Context
 import android.net.ConnectivityManager
@@ -13,12 +11,12 @@ import com.example.modernfoodrecipesapp.models.FoodRecipe
 import com.example.modernfoodrecipesapp.utils.NetworkResult
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
-import okhttp3.Response
+import retrofit2.Response
 
 @HiltViewModel
 class MainViewModel @ViewModelInject constructor(
-private val repository: Repository,
-application: Application
+    private val repository: Repository,
+    application: Application
 ) : AndroidViewModel(application) {
 
     var recipesResponse: MutableLiveData<NetworkResult<FoodRecipe>> = MutableLiveData()
