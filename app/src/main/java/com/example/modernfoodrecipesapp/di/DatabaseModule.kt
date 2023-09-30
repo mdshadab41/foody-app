@@ -33,6 +33,9 @@ object DatabaseModule {
     fun justtoCheckgithubStatus(){
 
     }
+    fun justtoCheckgithubStatus2(){
+
+    }
 
 
 }
