@@ -30,6 +30,9 @@ object DatabaseModule {
     @Provides
     fun provideDao(database: RecipesDatabase) = database.recipesDao()
 
+    fun justtoCheckgithubStatus(){
+
+    }
 
 
 }
